@@ -1,6 +1,10 @@
 #include "binary_trees.h"
 
 /**
+ * description: If parent already has a left-child, the new node
+ * must take its place, and the old left-child must be set as
+ * the left-child of the new node
+ *
  * binary_tree_insert_left: a function that inserts a node as the left-child
  *
  * @parent: pointer to the node to insert the left-child in

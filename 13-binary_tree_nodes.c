@@ -1,12 +1,11 @@
 #include "binary_trees.h"
 
 /**
+ * description: If tree is NULL, return 0
+ *
  * binary_tree_nodes:  a function that counts the nodes with at least
  * 1 child in a binary tree
  * @tree: pointer to the root node of the tree to count the number of nodes
- *
- * Description: If tree is NULL, return 0
- * A NULL pointer is not a leaf
  *
  * Return: number of nodes in the binary tree
  */

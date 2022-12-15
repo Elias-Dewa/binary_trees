@@ -1,11 +1,10 @@
 #include "binary_trees.h"
 
 /**
+ * description: If tree is NULL, return 0
+ *
  * binary_tree_leaves: a function that counts the leaves in a binary tree
  * @tree: pointer to the root node of the tree to count the number of leaves
- *
- * Description: If tree is NULL, return 0
- * A NULL pointer is not a leaf
  *
  * Return: number of leaves in binary
  */
