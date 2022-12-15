@@ -5,8 +5,10 @@
  * 1 child in a binary tree
  * @tree: pointer to the root node of the tree to count the number of nodes
  *
+ * Description: If tree is NULL, return 0
+ * A NULL pointer is not a leaf
+ *
  * Return: number of nodes in the binary tree
- * If tree is NULL, return 0
  */
 size_t binary_tree_nodes(const binary_tree_t *tree)
 {
@@ -15,9 +17,11 @@ size_t binary_tree_nodes(const binary_tree_t *tree)
 	if (!tree)
 		return (0);
 
-	nodes += binary_tree_nodes(tree->left);
-	nodes += binary_tree_nodes(tree->right);
-	nodes += 1;
-
+	if (tree->left || tree->right)
+	{
+		nodes += binary_tree_nodes(tree->left);
+		nodes += binary_tree_nodes(tree->right);
+		nodes += 1;
+	}
 	return (nodes);
 }
